@@ -143,6 +143,12 @@
   .rider{margin-top:10px;display:flex;gap:10px;align-items:center;}
   .rider input{flex:1;}
   .rider .remove{flex:0 0 auto;}
+  .depart{margin-top:18px;padding:16px 18px;border-radius:12px;background:#fbf7ec;border:1px solid #ead9b0;border-left:4px solid var(--gold);}
+  .depart h3{margin:0 0 8px;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:#8a6d1f;}
+  .depart p{margin:0;font-size:13.5px;line-height:1.55;color:#3a4757;}
+  .depart p + p{margin-top:8px;}
+  .depart a{color:var(--accent);font-weight:600;text-decoration:none;}
+  .depart a:hover{text-decoration:underline;}
   .count-pill{display:inline-block;margin-top:16px;padding:8px 14px;border-radius:999px;background:#eef3f9;color:var(--navy);font-weight:600;font-size:13px;}
 </style>
 </head>
@@ -168,7 +174,12 @@
 
       <div class="section">
         <h2 class="section-title">Riding the bus to the game?</h2>
-        <p class="section-sub">Group transportation will run from Friday night's dinner to the game. We need an exact headcount, so please answer for your whole party.</p>
+        <div class="depart">
+          <h3>Departure details</h3>
+          <p><strong>Bus departs from dinner</strong> at Aztec Urban MX, <a href="https://www.google.com/maps/search/?api=1&query=Aztec+Urban+MX+7918+S+Broadway+Ave+Tyler+TX+75703" target="_blank" rel="noopener">7918 S Broadway Ave, Tyler, TX 75703</a>, following the 4:30 PM dinner, and heads to the Friday Night Lights Homecoming Game (Bullard Panthers at Lindale Eagles, 6:00 PM kickoff, 200 Stadium Dr, Lindale).</p>
+          <p>After the game, the bus runs back to the recommended hotels or to a predetermined restaurant/bar. <strong>It will not return to the restaurant</strong>, so if you're riding with us, please take a rideshare (Uber/Lyft) to dinner rather than leaving a vehicle at Aztec Urban MX.</p>
+        </div>
+        <p class="section-sub" style="margin-top:16px">We need an exact headcount, so please answer for your whole party.</p>
 
         <div class="choice">
           <input type="radio" id="rideYes" name="Group Transportation" value="Yes" required>
